@@ -1,0 +1,75 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  color: #222;
+  font-family: georgia;
+  line-height: 1.5;
+}
+
+a {
+  color: rgb(20,61,142);
+}
+
+a:visited {
+  color: rgb(88,40,130);
+}
+
+a:hover {
+  color: rgb(255,84,0);
+}
+
+ins {
+  text-decoration: none;
+  font-style: italic;
+}
+
+header {
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+header h1,
+header h2 {
+  margin: 0;
+}
+
+main, footer {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+section {
+  margin-bottom: 4rem;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  padding-bottom: 1rem;
+}
+
+section > h2 {
+  margin-top: 0;
+}
+
+section > img {
+  width: 100%;
+  height: auto;
+}
+
+pre,
+code {
+  background-color: #ddd;
+  padding: 2px;
+}
+
+.lg {
+  width: 200px;
+}
+
+.md {
+  width: 100px;
+}
+
+.sm {
+  width: 50px;
+}
