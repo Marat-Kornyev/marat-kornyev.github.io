@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body{
+  background-color: rgb(238,	163,	188);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  max-width: 100%;
+	min-height:100%;
+}
+
+a{
+  color: #000;
+}
+
+a:hover{
+  color: rgb(23,	139,	251	);
+}
+
+a:visited{
+  color: rgb(179,	0,	0	);
+}
+
+h1, h2{
+  text-align: center;
+  font-variant: small-caps;
+}
+
+header{
+  text-align: center;
+}
+
+#names{
+  font-style: oblique;
+}
+
+
+section{
+  padding: 5px;
+}
+
+.question{
+  background-color: #ccc;
+  font-weight: bolder;
+  margin-top: 10px;
+  border: #000 solid 2px;
+}
+
+.answer {
+  background-color: #ccc;
+  margin-top: 5px;
+  border: #000 solid 2px;
+}
+
+#works-cited {
+  margin-top: 15px;
+  border: #000 solid 2px;
+}
+
+#works-cited
+
+p{
+  padding-left: 3px;
+  padding-right: -3px;
+}
+
+
+#item-00{
+  background-color: #ccc;
+  border: #000 solid 2px;
+  grid-area: 1 / 2 / 1 / 6;
+  text-align: center;
+}
+
+#item-01 {
+  grid-area: 2 / 2 / 4 / 6;
+}
+
+#item-02 {
+  grid-area: 4 / 2 / 6 / 6;
+}
+
+#item-03 {
+  grid-area: 6 / 2 / 8 / 6;
+}
+
+#item-04 {
+  grid-area: 8 / 2 / 10 / 6;
+}
+
+#item-05 {
+  grid-area: 10 / 2 / 12 / 5;
+}
+
+#item-06 {
+  background-color: #ccc;
+  margin-top: 5px;
+  border: #000 solid 2px;
+  grid-area: 12 / 1 / 13 / 7;
+}
+
+#item-07 {
+  margin-top: 12px;
+  text-align: center;
+  grid-area: 10 / 5 / 12 / 7;
+}
+
+#item-07 img{
+  width: 326.5px;
+  height: 346.5px;
+}
+
+#item-00{
+  margin-top: auto;
+}
+
+.grid-container {
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+grid-template-rows: .25fr repeat(2, 1fr);
+grid-column-gap: 10px;
+}
