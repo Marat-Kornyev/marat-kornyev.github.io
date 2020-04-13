@@ -1,0 +1,21 @@
+main{
+  padding-top: 35px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 25px;
+  grid-template-areas:
+    "edu skills"
+    "exp skills";
+}
+
+#education{
+  grid-area: edu;
+}
+
+#expirience{
+  grid-area: exp;
+}
+
+#skills{
+  grid-area: skills;
+}

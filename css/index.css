@@ -1,0 +1,25 @@
+main{
+display: grid;
+max-width: 1280px;
+grid-template-columns: 1fr 1fr;
+padding-top: 25px;
+}
+
+main img{
+  position: relative;
+  right: 0;
+  max-height: 100%;
+
+}
+
+main p{
+  position: relative;
+  padding-left: 60px;
+  padding-right: 60px;
+
+}
+
+main h2{
+  text-align: center;
+  padding-top: 100px;
+}

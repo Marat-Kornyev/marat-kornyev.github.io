@@ -9,6 +9,7 @@
 
 body{
   font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
   background-image: url("../img/fancy-bg.jpg");
   background-size: auto;
   background-repeat: no-repeat;
@@ -20,6 +21,10 @@ header{
   padding-bottom: 0.5em;
   position: relative;
   top: 0;
+}
+
+main{
+  font-size: 18px;
 }
 
 h1{
@@ -118,7 +123,7 @@ footer > ul {
   margin-top: 0;
   list-style: none;
   display: grid;
-  grid-template-columns: 1fr 1.5fr 1.5fr 1.5fr 5.9fr;
+  grid-template-columns: 1fr 1.5fr 1.5fr 1.5fr 7.4fr;
   text-align: center;
 }
 
@@ -134,10 +139,15 @@ footer ul {
 footer ul {
   background-color: #713be3;
 }
+
+small{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+}
                                 /*FOOTER STYLE ENDS HERE*/
 main {
   font-size: 18px;
-  padding-bottom: 200px;
+  padding-bottom: 120px;
   background-color: rgba(255,255,255,0.5);
   padding-left: 20px;
 }
@@ -155,30 +165,20 @@ footer {
   align-items: baseline;
 }
 
+h2{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+h3{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+}
+
 .skills>ol{
   list-style: unset;
 }
 
 .skills>ol>li>ol{
   list-style: circle;
-}
-
-#contact {
-  grid-area: contact;
-}
-
-#phone {
-  grid-area: phone;
-}
-
-#email {
-  grid-area: email;
-}
-
-#telegram {
-  grid-area: telegram;
-}
-
-#more {
-  grid-area: more;
 }

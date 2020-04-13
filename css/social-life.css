@@ -1,0 +1,49 @@
+section{
+  max-width: 1160px;
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-template-areas:
+    "item1 item2 item3"
+    "item4 item5 item6";
+}
+
+#item-1{
+  grid-area: item1;
+}
+
+#item-2{
+  grid-area: item2;
+}
+
+#item-3{
+  grid-area: item3;
+}
+
+#item-4{
+  grid-area: item4;
+}
+
+#item-5{
+  grid-area: item5;
+}
+
+#item-6{
+  grid-area: item6;
+}
+
+article{
+  max-width: 1160px;
+  padding-top: 10px;
+  padding-left: 35px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  align-items: center;
+}
+
+h2{
+  padding-top: 35px;
+  text-align: center;
+}
