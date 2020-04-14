@@ -17,6 +17,7 @@ body{
 }
 
 header{
+  z-index: +1;
   color: #fff;
   padding-bottom: 0.5em;
   position: relative;

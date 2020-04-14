@@ -9,6 +9,25 @@ section{
     "item4 item5 item6";
 }
 
+article a:hover {
+  background: none;
+}
+
+section img{
+  max-width: 350px;
+  max-height: 350px;
+}
+
+h2 a{
+  color: #000;
+  background-color: #fff;
+}
+
+h2 a:hover{
+  color: #fff;
+  background-color: #713be3;
+}
+
 #item-1{
   grid-area: item1;
 }

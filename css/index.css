@@ -6,6 +6,7 @@ padding-top: 25px;
 }
 
 main img{
+  z-index: 0;
   position: relative;
   right: 0;
   max-height: 100%;
