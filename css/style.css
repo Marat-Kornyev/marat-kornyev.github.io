@@ -334,27 +334,27 @@ svg{
   max-width: 35%;
   max-height: 35%;
 }
-svg.fa-spotify{
+#fa-spotify{
   color: rgb(101,210,110);
 }
 
-svg.fa-twitter{
+#fa-twitter{
   color: rgb(0, 172, 238);
 }
 
-svg.fa-instagram {
+#fa-instagram {
   color: rgb(171, 52, 168);
 }
 
-svg.fa-vk{
+#fa-vk{
   color: rgb(78, 125, 178);
 }
 
-svg.fa-linkedin-in{
+#fa-linkedin-in{
   color: rgb(40, 102, 171);
 }
 
-svg.fa-facebook{
+#fa-facebook{
   color: rgb(60, 90, 153);
 }
                       /* SOCIAL LIFE STYLE ENDS HERE  */
