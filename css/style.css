@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
 #wrapper{
+  max-width: 960px;
   height: 100%;
   position: relative;
-  max-width: 1280px;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -11,9 +12,9 @@ body{
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   background-image: url("../img/fancy-bg.jpg");
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-size: 100%;
+  background-repeat: repeat;
+  background-attachment: scroll;
 }
 
 header{
@@ -24,18 +25,50 @@ header{
   top: 0;
 }
 
-main{
+main {
   font-size: 18px;
+  background-color: rgba(255,255,255,0.4);
+  height: 100%;
 }
 
 h1{
-  font-size: 1px;
+  font-size: 0px;
 }
-                                /*NAV STYLE STARTS HERE*/
+
+h2{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+h2 a{
+  color: #000;
+  background-color: #fff;
+}
+
+h2 a:hover{
+  color: #fff;
+  background-color: #713be3;
+}
+
+h3{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  background: #fff;
+  color: #713be3;
+}
+                      /*NAV STYLE STARTS HERE*/
 nav {
   position: fixed;
   top: 0;
-  max-width: 1280px;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -43,7 +76,7 @@ nav > ul {
   margin-top: 0;
   list-style: none;
   display: grid;
-  grid-template-columns: 1.5fr 1.5fr 1.5fr 1.1fr 6.9fr;
+  grid-template-columns: 2fr 1.5fr 1.5fr 1.1fr 6.9fr;
   text-align: center;
 }
 
@@ -73,16 +106,6 @@ nav ul {
   background-color: #713be3;
 }
 
-a {
-  color: #fff;
-  text-decoration: none;
-}
-
-a:hover {
-  background: #fff;
-  color: #713be3;
-}
-
 li > a {
   display: block;
   padding: 10px;
@@ -102,78 +125,264 @@ ul > li > ul > li > a:hover {
   color: rgb(118, 69, 223);
   background-color: #fff;
 }
-                                /*NAV STYLE ENDS HERE*/
-
-                                /*FOOTER STYLE STARTS HERE*/
+                      /*NAV STYLE ENDS HERE*/
+                      /*FOOTER STYLE STARTS HERE*/
 footer {
-  position: static;
-  z-index: auto;
+  position: fixed;
   bottom: 0;
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
-footer p{
-  position: relative;
-  left: 10px;
-  max-width: 1280px;
-  margin: 0 auto;
+  color: #fff;
+  background-color: #713be3;
+  width: 90%;
+  align-items: baseline;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-areas:
+    "contact call email telegram more";
 }
 
 footer > ul {
+  margin-bottom: 0;
   margin-top: 0;
   list-style: none;
-  display: grid;
-  grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 5fr;
   text-align: center;
 }
 
-footer > p {
-  margin-top: 0;
-  text-align: center;
+footer > ul > li{
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 footer ul {
   padding-left: 0;
-}
-
-footer ul {
   background-color: #713be3;
 }
 
-small{
-  font-family: 'Open Sans', sans-serif;
-  font-size: 10px;
-}
-                                /*FOOTER STYLE ENDS HERE*/
-main {
-  font-size: 18px;
-  padding-bottom: 120px;
-  background-color: rgba(255,255,255,0.5);
-  padding-left: 20px;
+#contact{
+  position: relative;
+  right: 20px;
+  grid-area: contact;
 }
 
-footer {
-  color:#fff;
-  position: absolute;
-  bottom: 0;
-  background-color: #713be3;
-  margin: 0 auto;
+#call{
+  position: relative;
+  right: 20px;
+  grid-area: call;
+}
+
+#email{
+  position: relative;
+  right: 20px;
+  grid-area: email;
+}
+
+#telegram {
+  position: relative;
+  right: 20px;
+  grid-area: telegram;
+}
+
+#more{
+  position: relative;
+  right: 20px;
+  grid-area: more;
+}
+                      /*FOOTER STYLE ENDS HERE*/
+                      /* HOME STYLE STARTS HERE  */
+#home main{
+  width: 81%;
+  position: relative;
+  top: -10px;
+  padding-bottom: 10px;
   display: grid;
-  grid-gap: 15px;
+  grid-template-columns: 250px 50%;
+  grid-gap: 25px;
   grid-template-areas:
-    "contact phone email telegram more";
-  align-items: baseline;
+    "photo-of-me welcome-message";
+  margin-top: 35px;
+  padding-left: 20%;
 }
 
-h2{
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
+#home main img{
+  grid-area: photo-of-me;
+  margin-top: 105px;
+  z-index: 0;
+  position: relative;
+  padding-bottom: 0;
 }
 
-h3{
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 500;
+#home main p{
+  position: relative;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+#home main h2{
+  text-align: center;
+  padding-top: 100px;
+}
+
+#home main article{
+  grid-area: welcome-message;
+}
+                      /* HOME ME STYLE ENDS HERE  */
+
+                      /* ABOUT ME STYLE STARTS HERE  */
+#about main{
+  width: 90%;
+  padding-left: 10%;
+  padding-top: 8%;
+  padding-right: 13px;
+  padding-bottom: 0;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-template-areas:
+    "who who where"
+    "what-do what-like what-will";
+}
+
+#who{
+  grid-area: who;
+}
+
+#where{
+  grid-area: where;
+}
+
+#what-do{
+  grid-area: what-do;
+}
+
+#what-like{
+  grid-area: what-like;
+}
+
+#what-will{
+  grid-area: what-will;
+}
+                      /* ABOUT ME STYLE ENDS HERE  */
+
+                      /* SOCIAL LIFE STYLE STARTS HERE  */
+#social-life main{
+  padding-left: 7%;
+  width: 94%;
+}
+
+#social-life section{
+  max-width: 1160px;
+  padding-top: 10px;
+  display: grid;
+  padding-left: 0px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-template-areas:
+    "item1 item2 item3"
+    "item4 item5 item6";
+}
+
+#social-life article a:hover {
+  background: none;
+}
+
+#social-life section img{
+  max-width: 350px;
+  max-height: 350px;
+}
+
+#item-1{
+  grid-area: item1;
+}
+
+#item-2{
+  grid-area: item2;
+}
+
+#item-3{
+  grid-area: item3;
+}
+
+#item-4{
+  grid-area: item4;
+}
+
+#item-5{
+  grid-area: item5;
+}
+
+#item-6{
+  grid-area: item6;
+}
+
+#social-life article{
+  max-width: 1160px;
+  padding-top: 10px;
+  padding-left: 35px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  align-items: center;
+  padding-bottom: 120px;
+}
+
+#social-life h2{
+  padding-top: 35px;
+  text-align: center;
+}
+
+svg{
+  max-width: 35%;
+  max-height: 35%;
+}
+.fa-spotify{
+  color: rgb(101,210,110);
+}
+
+.fa-twitter{
+  color: rgb(0, 172, 238);
+}
+
+.fa-instagram {
+  color: rgb(171, 52, 168);
+}
+
+.fa-vk{
+  color: rgb(78, 125, 178);
+}
+
+.fa-linkedin-in{
+  color: rgb(40, 102, 171);
+}
+
+.fa-facebook{
+  color: rgb(60, 90, 153);
+}
+                      /* SOCIAL LIFE STYLE ENDS HERE  */
+
+                      /* RESUME STYLE STARTS HERE  */
+#resume{
+  width: 91%;
+  padding-left: 10%;
+  padding-top: 35px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 25px;
+  grid-template-areas:
+    "edu skills"
+    "exp skills";
+  padding-bottom: 100px;
+}
+
+#education{
+  grid-area: edu;
+}
+
+#expirience{
+  grid-area: exp;
+}
+
+#skills{
+  grid-area: skills;
 }
 
 .skills>ol{
@@ -183,3 +392,4 @@ h3{
 .skills>ol>li>ol{
   list-style: circle;
 }
+                      /* RESUME STYLE ENDS HERE  */
