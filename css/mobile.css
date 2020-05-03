@@ -1,0 +1,373 @@
+@media (max-width: 414px){
+
+  #wrapper{
+    margin: 0;
+    padding: 0;
+  }
+
+  header{
+    color: #fff;
+    padding-bottom: 0.5em;
+    position: relative;
+  }
+
+  main {
+    font-size: 12px;
+    height: 100%;
+  }
+
+  h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+  }
+
+  h2 a{
+    color: #000;
+    background-color: #fff;
+  }
+
+  h2 a:hover{
+    color: #fff;
+    background-color: #713be3;
+  }
+
+  h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background: #fff;
+    color: #713be3;
+  }
+                        /* MOBILE NAV STYLE STARTS HERE*/
+  nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 12px;
+  }
+
+  nav > ul {
+    margin-top: 0;
+    list-style: none;
+    display: block;
+  }
+
+  nav ul {
+    padding-left: 0;
+  }
+
+  ul > li {
+    display: inline-block;
+    position: relative;
+  }
+
+  ul > li > ul {
+    display: none;
+  }
+
+  ul > li:hover > ul {
+    display: none;
+  }
+
+  nav ul {
+    background-color: #713be3;
+  }
+
+  li > a {
+    display: block;
+    padding: 10px;
+  }
+
+  ul > li > ul > li {
+    display: none;
+  }
+                        /*MOBILE NAV STYLE ENDS HERE*/
+                        /*MOBILE FOOTER STYLE STARTS HERE*/
+  footer {
+    position: fixed;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 12px;
+  }
+
+  footer > ul {
+    margin-bottom: 0;
+    margin-top: 0;
+    list-style: none;
+    text-align: center;
+  }
+
+  footer > ul > li{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  footer ul {
+    padding-left: 0;
+    background-color: #713be3;
+  }
+
+  #contact{
+    display: none;
+    position: relative;
+    right: 20px;
+    grid-area: contact;
+  }
+
+  #call{
+    position: relative;
+    left: 25px;
+    grid-area: call;
+  }
+
+  #email{
+    position: relative;
+    left: 25px;
+    grid-area: email;
+  }
+
+  #telegram {
+    position: relative;
+    left: 25px;
+    grid-area: telegram;
+  }
+
+  #more{
+    position: relative;
+    left: 25px;
+    grid-area: more;
+  }
+                        /* MOBILE FOOTER STYLE ENDS HERE*/
+                        /* MOBILE HOME STYLE STARTS HERE  */
+  #home main{
+    display: block;
+    min-width: 100%;
+    position: relative;
+    right: 25px;
+  }
+
+  #home main img{
+    display: block;
+    position: absolute;
+    bottom: -10%;
+    max-width: 175px;
+    margin-top: 50px;
+  }
+
+  #home main p{
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+    right: 25px;
+    margin-bottom: 250px;
+  }
+
+  #home main h2{
+    padding-top: 100px;
+    font-size: 24px;
+    position: relative;
+    right: 25px;
+  }
+
+  #home main article{
+    grid-area: welcome-message;
+  }
+                        /* MOBILE HOME ME STYLE ENDS HERE  */
+
+                        /* MOBILE ABOUT ME STYLE STARTS HERE  */
+  #about main{
+    width: 100%;
+    background-color: rgba(255,255,255,0.8);
+    z-index: -1;
+    padding-top: 8%;
+    padding-bottom: 0;
+    position: relative;
+    right: 5px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+      "who who who"
+      "where where where"
+      "what-do what-do what-do"
+      "what-like what-like what-like"
+      "what-will what-will what-will";
+  }
+
+  #who{
+    grid-area: who;
+  }
+
+  #where{
+    grid-area: where;
+  }
+
+  #what-do{
+    grid-area: what-do;
+  }
+
+  #what-like{
+    grid-area: what-like;
+  }
+
+  #what-will{
+    grid-area: what-will;
+    padding-bottom: 25px;
+  }
+                        /* MOBILE ABOUT ME STYLE ENDS HERE  */
+
+                        /* MOBILE SOCIAL LIFE STYLE STARTS HERE  */
+  #social-life main{
+    padding-left: 7%;
+    width: 94%;
+  }
+
+  #social-life section{
+    max-width: 1160px;
+    padding-top: 10px;
+    display: grid;
+    padding-left: 0px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas:
+      "item1 item2 item3"
+      "item4 item5 item6";
+  }
+
+  #social-life article a:hover {
+    background: none;
+  }
+
+  #social-life section img{
+    position: relative;
+    right: 5px;
+    max-width: 115px;
+    max-height: 115px;
+  }
+
+  #item-1{
+    grid-area: item1;
+  }
+
+  #item-2{
+    grid-area: item2;
+  }
+
+  #item-3{
+    grid-area: item3;
+  }
+
+  #item-4{
+    grid-area: item4;
+  }
+
+  #item-5{
+    grid-area: item5;
+  }
+
+  #item-6{
+    grid-area: item6;
+  }
+
+  #social-life article{
+    max-width: 1160px;
+    padding-top: 10px;
+    padding-left: 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+    padding-bottom: 120px;
+  }
+
+  #social-life h2{
+    font-size: 16px;
+    padding-top: 35px;
+    text-align: center;
+  }
+
+  svg{
+    max-width: 65%;
+    max-height: 65%;
+  }
+
+  #fa-spotify{
+    color: rgb(101,210,110);
+  }
+
+  #fa-twitter{
+    color: rgb(0, 172, 238);
+  }
+
+  #fa-instagram {
+    color: rgb(171, 52, 168);
+  }
+
+  #fa-vk{
+    color: rgb(78, 125, 178);
+  }
+
+  #fa-linkedin-in{
+    color: rgb(40, 102, 171);
+  }
+
+  #fa-facebook{
+    color: rgb(60, 90, 153);
+  }
+                        /* MOBILE SOCIAL LIFE STYLE ENDS HERE  */
+
+                        /* MOBILE RESUME STYLE STARTS HERE  */
+  #resume{
+    background-color: rgba(255,255,255,0.8);
+    width: 100%;
+    padding-left: 10%;
+    padding-top: 35px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 25px;
+    grid-template-areas:
+      "edu edu"
+      "exp exp"
+      "skills skills";
+    padding-bottom: 100px;
+  }
+
+  #resume section article p{
+    line-height: 22px;
+  }
+
+  #education{
+    grid-area: edu;
+  }
+
+  #expirience{
+    grid-area: exp;
+  }
+
+  #skills{
+    grid-area: skills;
+  }
+
+  .skills>ol{
+    list-style: unset;
+  }
+
+  .skills>ol>li>ol{
+    list-style: circle;
+  }
+                        /* MOBILE RESUME STYLE ENDS HERE  */
+}
